@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Pdo\\Dao\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "portugalazaro",
+            "email": "portugallazaro@gmail.com"
+        }
+    ],
+    "require": {}
+}
