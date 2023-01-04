@@ -1,6 +1,3 @@
-<?php
-$caminho = $_SERVER;
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +7,17 @@ $caminho = $_SERVER;
     <title>Adicionar Usuario</title>
 </head>
 <body>
-    <form action="./src/controller/salvar.php" method="post">
+    <form action="../controller/updateUsuario.php" method="post">
+        <input type="hidden" name="id" value="<?=$_POST['id']?>">
         <label for="">Nome:
-            <input type="text" name="nome" id="">
+            <input type="text" name="nome" value="<?=$_POST['nome']?>" id="">
         </label>
         <label for="">Email:
-            <input type="text" name="email" id="">
+            <input type="text" name="email" value="<?=$_POST['email']?>" id="">
         </label>
         <button>Salvar</button>
     </form>
 
-    <a href="./src/controller/listarUsuarios.php">Listar Usuarios</a>
+    <a href="../controller/listarUsuarios.php">Listar Usuarios</a>
 </body>
 </html>

@@ -10,13 +10,3 @@ $usuarioDao = new UsuarioDAO(connection::criaConexao());
 $usuarios = $usuarioDao->buscarTodosUsuarios();
 
 require_once "../views/listarUsuarios.php";
-
-/*
-
-    c -> creat
-    r -> read
-    u -> update
-    d -> delete
-
-
-*/ 

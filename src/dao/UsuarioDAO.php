@@ -40,4 +40,25 @@ class UsuarioDAO
         $statement->bindValue(':email',$usuario->email());
         return $statement->execute();
     }
+
+
+    public function atualizarUsuario(Usuario $usuario):bool
+    {
+        $sql = "UPDATE alunos SET nome = :nome, email = :email WHERE id = :id";
+        $statement = $this->pdo->prepare($sql);
+        $statement->bindValue(':nome', $usuario->nome());
+        $statement->bindValue(':email', $usuario->email());
+        $statement->bindValue(':id', $usuario->id());
+        return $statement->execute();
+
+    }
+
+    public function deletarUsuario($id):void
+    {
+        $statement = $this->pdo->prepare("DELETE FROM alunos WHERE id = :id");
+        $statement->bindValue(':id', $id);
+        $statement->execute();
+    }
+
+
 }

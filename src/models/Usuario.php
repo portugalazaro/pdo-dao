@@ -20,7 +20,7 @@ class Usuario
         return $this->id;
     }
 
-    public function adicionaId($id)
+    public function adicionaId($id):void
     {
         $this->id = $id;
     }
@@ -46,5 +46,10 @@ class Usuario
     {
         return $this->email;
     }
+
+    // public function alteraEmail($email):void
+    // {
+    //     $this->email = $email;
+    // }
 
 }
