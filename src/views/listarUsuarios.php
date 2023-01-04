@@ -29,27 +29,7 @@
         <?php endforeach; ?>
 
     </table>
-
-    <script>
-
-        let btn = document.querySelectorAll('.editar');
-        let btnDelete = document.querySelectorAll('.deletar');
-        let form = document.querySelectorAll('.form');
-
-        btn.forEach(e=>{
-            let editar = e.parentNode;
-            e.addEventListener('click', x=>{
-                editar.action = 'teste.php';
-            });
-        }); 
-
-
-        btnDelete.forEach(e=>{
-            let deletar = e.parentNode;
-            e.addEventListener('click', x=>{
-                deletar.action = 'ok.php';
-            });
-        }); 
-    </script>
+    <a href="../../index.php">adicionar</a>
+    <a href="../controller/listarUsuarios.php">Listar Usuarios</a>
 </body>
 </html>

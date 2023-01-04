@@ -10,7 +10,7 @@ $caminho = $_SERVER;
     <title>Adicionar Usuario</title>
 </head>
 <body>
-    <form action="./src/controller/salvar.php" method="post">
+    <form action="./src/controller/salvarUsuario.php" method="post">
         <label for="">Nome:
             <input type="text" name="nome" id="">
         </label>

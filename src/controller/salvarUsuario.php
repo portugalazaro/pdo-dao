@@ -12,5 +12,6 @@ $usuario = new Usuario($_POST['nome'], $_POST['email']);
 $usuarioDAO = new UsuarioDAO(connection::criaConexao());
 
 if($usuarioDAO->salvarUsuario($usuario)) {
-    echo 'usuario adicionando com sucesso!';
+    header("Location: ../../index.php");
+    exit;
 }
