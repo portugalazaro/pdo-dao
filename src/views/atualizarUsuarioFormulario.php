@@ -8,12 +8,12 @@
 </head>
 <body>
     <form action="../controller/updateUsuario.php" method="post">
-        <input type="hidden" name="id" value="<?=$_POST['id']?>">
+        <input type="hidden" name="id" value="<?=$_GET['id']?>">
         <label for="">Nome:
-            <input type="text" name="nome" value="<?=$_POST['nome']?>" id="">
+            <input type="text" name="nome" value="<?=$_GET['nome']?>" id="">
         </label>
         <label for="">Email:
-            <input type="text" name="email" value="<?=$_POST['email']?>" id="">
+            <input type="text" name="email" value="<?=$_GET['email']?>" id="">
         </label>
         <button>Salvar</button>
     </form>

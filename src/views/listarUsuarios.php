@@ -21,13 +21,8 @@
             <td><?=$user->nome()?></td>
             <td><?=$user->email()?></td>
             <td>
-                <form action="../views/atualizarUsuarioFormulario.php" method="post">
-                    <input type="hidden" name="id" value="<?=$user->id()?>">
-                    <input type="hidden" name="nome" value="<?=$user->nome()?>">
-                    <input type="hidden" name="email" value="<?=$user->email()?>">
-                    <button class="deletar">Deletar</button> |
-                    <button class="editar">Editar</button>
-                </form>
+                <a href="../views/atualizarUsuarioFormulario.php?id=<?=$user->id()?>&nome=<?=$user->nome()?>&email=<?=$user->email()?>">Editar</a>
+                <a href="../views/atualizarUsuarioFormulario.php?id=<?=$user->id()?>">Deletar</a>
             </td>
         </tr>
         
