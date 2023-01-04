@@ -8,5 +8,5 @@ require_once "../../connection.php";
 
 $usuarioDAO = new UsuarioDAO(connection::criaConexao());
 
-// $usuarioDAO->deletarUsuario($_GET['id']);
-header("Location: ../views/listarUsuarios.php");
+$usuarioDAO->deletarUsuario($_GET['id']);
+header("Location: ../controller/listarUsuarios.php");

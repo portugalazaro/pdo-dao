@@ -22,7 +22,7 @@
             <td><?=$user->email()?></td>
             <td>
                 <a href="../views/atualizarUsuarioFormulario.php?id=<?=$user->id()?>&nome=<?=$user->nome()?>&email=<?=$user->email()?>">Editar</a>
-                <a href="../views/atualizarUsuarioFormulario.php?id=<?=$user->id()?>">Deletar</a>
+                <a href="../controller/deleteUsuario.php?id=<?=$user->id()?>">Deletar</a>
             </td>
         </tr>
         
